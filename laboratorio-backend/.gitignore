@@ -1,0 +1,25 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno — NUNCA subir a GitHub
+.env
+.env.local
+.env.production
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Build
+dist/
+build/

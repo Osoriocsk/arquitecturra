@@ -1,0 +1,46 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #1a1a2e;
+}
+
+/* Tabla global */
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+th { background: #1a1a2e; color: white; padding: 0.9rem 1rem; text-align: left; font-size: 0.85rem; }
+td { padding: 0.85rem 1rem; border-bottom: 1px solid #f0f0f0; font-size: 0.9rem; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #f8f8ff; }
+
+/* Badges */
+.badge { padding: 0.25rem 0.6rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+.badge.disponible    { background: #dcfce7; color: #16a34a; }
+.badge.prestado      { background: #fef9c3; color: #ca8a04; }
+.badge.mantenimiento { background: #fee2e2; color: #dc2626; }
+.badge.activo        { background: #dcfce7; color: #16a34a; }
+.badge.inactivo      { background: #fee2e2; color: #dc2626; }
+
+/* Botones */
+.btn-primary   { background: #4f46e5; color: white; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; }
+.btn-primary:hover { background: #4338ca; }
+.btn-secondary { background: #f0f0f0; color: #333; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; cursor: pointer; }
+.btn-sm        { padding: 0.3rem 0.7rem; border: none; border-radius: 6px; cursor: pointer; font-size: 0.8rem; background: #e0e7ff; color: #4f46e5; margin-right: 0.3rem; }
+.btn-sm.danger { background: #fee2e2; color: #dc2626; }
+
+/* Formularios */
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; margin-bottom: 0.3rem; font-size: 0.85rem; font-weight: 500; color: #333; }
+.form-group input,
+.form-group select,
+.form-group textarea { width: 100%; padding: 0.65rem 0.9rem; border: 1px solid #ddd; border-radius: 8px; font-size: 0.9rem; box-sizing: border-box; }
+.form-group input:focus,
+.form-group select:focus { outline: none; border-color: #4f46e5; }
+
+/* Page header */
+.page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+.page-header h1 { font-size: 1.5rem; color: #1a1a2e; }
+
+/* Estados */
+.estado { text-align: center; padding: 2rem; color: #666; }
+.estado.error { color: #ef4444; }
